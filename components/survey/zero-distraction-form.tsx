@@ -110,8 +110,7 @@ function isQualifiedLead(form: FormState): boolean {
   const ownerOk = ["owner", "part-owner", "family"].includes(form.whoAreYou)
   const timelineOk = form.timeline !== "exploring"
   const yearsOk = form.yearsOwned !== "0-2" && form.yearsOwned !== "3-5"
-  const conditionOk = form.condition !== "excellent"
-  return ownerOk && timelineOk && yearsOk && conditionOk
+  return ownerOk && timelineOk && yearsOk
 }
 
 function formatPhoneDisplay(raw: string): string {
